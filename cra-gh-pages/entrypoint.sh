@@ -9,6 +9,7 @@ REPOSITORY="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITO
 
 build() {
   mkdir -p /github/home/pkg
+  yarn
   yarn build
   mv build /github/home/pkg
 }

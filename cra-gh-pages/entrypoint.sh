@@ -24,7 +24,7 @@ push() {
   git push origin gh-pages
 }
 
-if [[ "${GITHUB_REF}" == "master" ]]; then
+if [[ "${GITHUB_REF}" == "refs/heads/master" ]]; then
     echo "Starting action for master";
 else
     echo "Skipping action because push was not to master" && exit 78;

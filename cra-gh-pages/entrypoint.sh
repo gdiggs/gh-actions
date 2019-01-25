@@ -18,7 +18,7 @@ push() {
   git config user.email ${GITHUB_ACTOR}@users.noreply.github.com
   git config user.name ${GITHUB_ACTOR}
   git remote set-url origin ${REPOSITORY}
-  git checkout -B gh-pages
+  git checkout gh-pages
   mv /github/home/pkg/build/* .
   git add .
   git commit -m "Publish site"

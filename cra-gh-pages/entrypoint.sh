@@ -3,6 +3,8 @@
 set -o errexit
 set -o pipefail
 
+set -ex
+
 REPOSITORY="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
 build() {

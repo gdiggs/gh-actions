@@ -1,4 +1,4 @@
-FROM node:10.9.0
+FROM node
 
 LABEL "name"="Create React App gh-pages action"
 LABEL "maintainer"="Gordon Diggs"
